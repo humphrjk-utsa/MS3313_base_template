@@ -31,7 +31,36 @@ essential_packages <- c(
     "broom", "scales", "plotly", "RColorBrewer",
     
     # Data manipulation
-    "reshape2", "data.table"
+    "reshape2", "data.table",
+    
+    # Module 1: Data Exploration and Statistics
+    "Hmisc",      # High-level graphics, describe(), data analysis utilities
+    "pastecs",    # Space-time series, stat.desc() for detailed statistics
+    "psych",      # Psychological research tools, describe() with skewness/kurtosis
+    "e1071",      # SVMs, skewness/kurtosis functions, naive Bayes
+    "correlation", # Correlation analysis with multiple methods
+    
+    # Module 2: ANOVA, MANOVA, ANCOVA
+    "ggpubr",      # Publication-ready plots, customizing ggplot2
+    "tidyverse",   # Data manipulation suite (includes dplyr, ggplot2, etc.)
+    "AICcmodavg",  # Model comparison (AIC, BIC, likelihood)
+    "gridExtra",   # Arrange multiple plots
+    "effectsize",  # Effect size calculations (eta squared, etc.)
+    "MASS",        # LDA, discriminant analysis, modern applied statistics
+    "rstatix",     # Pipe-friendly statistical tests
+    "mvnormalTest", # Multivariate normality tests (Mardia's test)
+    "heplots",     # Box's M test for homogeneity of covariance
+    "car",         # Companion to Applied Regression (Levene's test, Type III SS)
+    "multcomp",    # Post-hoc comparisons (glht, Tukey)
+    
+    # Module 3: PCA, PCR, MDS
+    "corrr",       # Correlation analysis and data frame handling
+    "ggcorrplot",  # Visualization of correlation matrices
+    "FactoMineR",  # Exploratory data analysis including PCA
+    "factoextra",  # Visualization of PCA outputs (scree plot, biplot)
+    "pls",         # Partial Least Squares and Principal Component Regression
+    "igraph",      # Network analysis and graph-based MDS visualization
+    "cluster"      # Clustering algorithms and MDS support
 )
 
 cat("Installing", length(essential_packages), "essential packages...\n")
